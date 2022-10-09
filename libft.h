@@ -6,7 +6,7 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 23:57:09 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/09 18:15:54 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/09 18:17:30 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,5 @@ int	ft_isalnum(int c);
 int	ft_isalpha(int c);
 int	ft_isascii(int c);
 int	ft_isdigit(int c);
-
 
 #endif
