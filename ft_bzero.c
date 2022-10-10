@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/08 23:57:09 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/10 15:15:15 by dcarvalh         ###   ########.fr       */
+/*   Created: 2022/10/10 15:06:24 by dcarvalh          #+#    #+#             */
+/*   Updated: 2022/10/10 15:33:25 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdlib.h>
-
-// **ctype.h**
-int		ft_isalnum(int c);
-int		ft_isalpha(int c);
-int		ft_isascii(int c);
-int		ft_isdigit(int c);
-int		ft_isprint(int c);
-// **string.h**
-void	ft_bzero(void *str, size_t n);
-void	*ft_memset(void *str, int c, size_t n);
-size_t	ft_strlen(const char *str);
-#endif
+/**
+*>>sets first n bytes of memory pointed by str to 0
+* erasing them<<
+* 
+* @param *str: pointer to the block of memory to erase
+* @param n: number of bytes to erase
+* */
+void	ft_bzero(void *str, size_t n)
+{
+	ft_memset(str, 0, n);
+}
