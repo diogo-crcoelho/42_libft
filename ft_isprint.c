@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/08 23:57:09 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/10 13:52:01 by dcarvalh         ###   ########.fr       */
+/*   Created: 2022/10/10 13:49:31 by dcarvalh          #+#    #+#             */
+/*   Updated: 2022/10/10 13:55:48 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-// **ctype.h**
-int	ft_isalnum(int c);
-int	ft_isalpha(int c);
-int	ft_isascii(int c);
-int	ft_isdigit(int c);
-int	ft_isprint(int c);
-
-#endif
+/**
+* >checks if c is printable on the ascii table<<
+* 
+* @param c: char to be checked (int)casted
+* @retval: 1 if is printable, 0 if not
+* */
+int	ft_isprint(int c)
+{
+	if (c < 32 || c > 126)
+		return (0);
+	return (1);
+}
