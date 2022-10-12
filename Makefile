@@ -6,7 +6,7 @@
 #    By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/02 18:27:40 by soups             #+#    #+#              #
-#    Updated: 2022/10/10 19:18:39 by dcarvalh         ###   ########.fr        #
+#    Updated: 2022/10/12 15:45:14 by dcarvalh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,20 +30,32 @@ SRCS = $(wildcard *.c)
 # 	ft_strdup.c \
 # 	ft_calloc.c
 OBJS = $(SRCS:.c=.o)
+INC = libft.h
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -fsanitize=address -g
+CFLAGS = -Wall -Wextra -Werror 
+CPPFLAGS = -fsanitize=address -g
 NORM = norminette -R
+
+%.o:%.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 		
 all : $(NAME)
 
-clean: $(OBJS)
+clean:
 	rm -f $(OBJS)
+
+fclean: clean
+	rm -f $(NAME)
+
+re:	fclean all
 
 norm :
 	$(NORM) CheckDefine $(INC)
 	$(NORM) CheckForbiddenSourceHeader $(SRCS)
 
+sanitize:
+	$(CC) $(CFLAGS) $(CPPFLAGS) $(SRCS)
 	

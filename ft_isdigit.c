@@ -6,7 +6,7 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 15:18:41 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/10 13:47:13 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/12 15:23:32 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 * */
 int	ft_isdigit(int c)
 {
-	if (c < 47 || c > 57)
+	if (c < 48 || c > 57)
 		return (0);
 	return (1);
 }
