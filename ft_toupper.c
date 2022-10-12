@@ -1,33 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/10 16:50:43 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/12 16:06:09 by dcarvalh         ###   ########.fr       */
+/*   Created: 2022/10/12 16:15:42 by dcarvalh          #+#    #+#             */
+/*   Updated: 2022/10/12 16:39:15 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-/**
-*>>copies n characters from src to dest
-* safer than memcpy for overlapping memory<<
-* 
-* @param dest: pointer to the dest array
-* @param src: pointer to the memory to be copied
-* @param n: number of bytes to be copied
-* @retval: pointer to dest
-* */
-void	*ft_memmove(void *dest, const void *src, size_t n)
-{
-	size_t			i;
-	unsigned char	*temp;
 
-	i = -1;
-	temp = (unsigned char *)src;
-	printf("%s", temp);
-	return (dest);
+/**
+*>> passes given char to uppercase if is lowercase<<
+* 
+* @param c: char to be uppercased
+* @retval: uppercase c if lowercase, c if not
+* */
+int	ft_toupper(int c)
+{
+	if (c < 97 || c > 122)
+		return (c);
+	return (c - 32);
 }
