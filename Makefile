@@ -6,7 +6,7 @@
 #    By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/02 18:27:40 by soups             #+#    #+#              #
-#    Updated: 2022/10/12 15:45:14 by dcarvalh         ###   ########.fr        #
+#    Updated: 2022/10/12 17:10:20 by dcarvalh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ SRCS = $(wildcard *.c)
 OBJS = $(SRCS:.c=.o)
 INC = libft.h
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror 
+CFLAGS = -Wall -Wextra -Werror
 CPPFLAGS = -fsanitize=address -g
 NORM = norminette -R
 
