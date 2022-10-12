@@ -6,7 +6,7 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 23:57:09 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/13 00:10:43 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/13 00:35:50 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,8 @@ void	*ft_memchr(const void *str, int c, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memset(void *str, int c, size_t n);
+
+// **stdlib.h**
+void	*ft_calloc(size_t nitems, size_t size);
 
 #endif
