@@ -1,32 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/12 22:58:10 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/13 15:48:12 by dcarvalh         ###   ########.fr       */
+/*   Created: 2022/10/13 16:19:09 by dcarvalh          #+#    #+#             */
+/*   Updated: 2022/10/13 16:58:17 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+/**
+*>>duplicate string given<
+* 
+* @param *str: string to be duplicated
+* @retval: duplicated string with allocated memory
+* */
+char	*ft_strdup(const char *str)
 {
-	size_t			i;
-	unsigned char	temp;
-	unsigned char 	*tdest;
-	
+	size_t	size;
+	size_t	i;
+	char	*ret;
+
+	size = ft_strlen(str);
+	ret = malloc(size + 1);
+	if (!ret)
+		return (NULL);
 	i = -1;
-	tdest = (unsigned char*)dest;
-	while (++i < n)
-	{
-		temp = ((unsigned char *)src)[i];
-		printf("%c-", temp);
-		tdest[i] = temp;
-		printf("%c\n", tdest[i]);
-	}
-	return (dest);
+	while (++i < size)
+		ret[i] = str[i];
+	ret[i] = 0;
+	return (ret);
 }
