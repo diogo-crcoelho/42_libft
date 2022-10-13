@@ -6,7 +6,7 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 23:57:09 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/13 18:36:31 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/13 22:44:21 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,8 @@ void	*ft_calloc(size_t nitems, size_t size);
 
 //--------------------------------Part 2--------------------------------------//
 
-void	ft_putstr_fd(char *str, int fd);
+void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *str, int fd);
+void	ft_putstr_fd(char *str, int fd);
 
 #endif
