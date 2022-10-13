@@ -6,15 +6,12 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 16:28:16 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/13 17:01:04 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/13 17:06:59 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/**
-* 
-* */
 static int	ft_isspace(int c)
 {
 	if (c > 8 && c < 14)

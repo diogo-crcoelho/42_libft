@@ -6,14 +6,17 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 23:57:09 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/13 16:55:20 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/13 18:36:31 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <stdlib.h>
 
+# include <stdlib.h>
+# include <unistd.h>
+
+//--------------------------------Part 1--------------------------------------//
 // **ctype.h**
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
@@ -22,7 +25,6 @@ int		ft_isdigit(int c);
 int		ft_isprint(int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
-
 // **string.h**
 char	*ft_strchr(const char *str, int c);
 char	*ft_strdup(const char *str);
@@ -37,9 +39,13 @@ void	*ft_memchr(const void *str, int c, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memset(void *str, int c, size_t n);
-
 // **stdlib.h**
 int		ft_atoi(const char *str);
 void	*ft_calloc(size_t nitems, size_t size);
+
+//--------------------------------Part 2--------------------------------------//
+
+void	ft_putstr_fd(char *str, int fd);
+void	ft_putendl_fd(char *str, int fd);
 
 #endif

@@ -1,33 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/13 00:30:53 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/13 18:51:43 by dcarvalh         ###   ########.fr       */
+/*   Created: 2022/10/13 18:42:12 by dcarvalh          #+#    #+#             */
+/*   Updated: 2022/10/13 18:47:08 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/**
-*>>alocates requested memory and returns a pointer to it
-* set alocated memory to 0<<
-* 
-* @param nitems: number of items to allocate
-* @param size:size of items to allocate
-* @retval: pointer to allocated memory
-* NULL if allocation fails
-* */
-void	*ft_calloc(size_t nitems, size_t size)
+void	ft_putendl_fd(char *str, int fd)
 {
-	void	*ret;
-
-	ret = malloc(nitems * size);
-	if (!ret)
-		return (NULL);
-	ft_bzero(ret, nitems * size);
-	return (ret);
+	ft_putstr_fd(str, fd);
+	write(fd, "\n", 1);
 }
