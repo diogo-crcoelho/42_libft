@@ -6,7 +6,7 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 22:56:16 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/14 02:26:45 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/14 02:27:56 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static int	digit_count(long int n)
 }
 
 /**
-*>>returns a string representing the integer received as an argument.
+*>>returns a string representing the integer received as an argument.<<
 * 
 * @param n: int to convert
 * @retval: converted str if allocation is sucessful
