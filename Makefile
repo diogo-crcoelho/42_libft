@@ -6,7 +6,7 @@
 #    By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/02 18:27:40 by soups             #+#    #+#              #
-#    Updated: 2022/10/13 22:55:23 by dcarvalh         ###   ########.fr        #
+#    Updated: 2022/10/14 16:51:36 by dcarvalh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,8 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c\
 	ft_strdup.c \
 	ft_calloc.c \
 	ft_itoa.c \
-	ft_putchar_fd.c ft_putendl_fd.c ft_putstr_fd.c
+	ft_strtrim.c \
+	ft_putnbr_fd.c ft_putchar_fd.c ft_putendl_fd.c ft_putstr_fd.c
 	
 OBJS = $(SRCS:.c=.o)
 INC = libft.h
@@ -53,7 +54,7 @@ fclean: clean
 
 re:	fclean all
 
-so:
+so: re
 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
 	gcc -nostartfiles -shared -o libft.so $(OBJS)
 	

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/13 22:56:16 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/14 18:31:14 by dcarvalh         ###   ########.fr       */
+/*   Created: 2022/10/14 14:58:29 by dcarvalh          #+#    #+#             */
+/*   Updated: 2022/10/14 18:31:30 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,23 +31,19 @@ static size_t	digit_count(long int n)
 }
 
 /**
-*>>returns a string representing the integer received as an argument.<<
-* 
-* @param n: int to convert
-* @retval: converted str if allocation is sucessful
-* NULL otherwise
-* */
-char	*ft_itoa(int n)
+ *>>outputs the integer ’n’ to the given file descriptor<<
+ *  
+ * @param  n: int to output 
+ * @param  fd: file descriptor to write on
+ */
+void	ft_putnbr_fd(int n, int fd)
 {
-	char		*res;
+	char		res[12];
 	size_t		size;
 	long int	temp;
 
 	temp = (long)n;
 	size = digit_count(temp);
-	res = (char *)malloc(size + 1);
-	if (!res)
-		return (NULL);
 	res[size] = 0;
 	if (temp == 0)
 		res[0] = 48;
@@ -61,5 +57,5 @@ char	*ft_itoa(int n)
 		res[--size] = temp % 10 + 48;
 		temp /= 10;
 	}
-	return (res);
+	ft_putstr_fd(res, fd);
 }

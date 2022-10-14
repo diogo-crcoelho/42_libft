@@ -6,7 +6,7 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 18:38:00 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/13 22:53:23 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/14 16:23:40 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,6 @@
 * */
 void	ft_putstr_fd(char *str, int fd)
 {
-	write (fd, str, ft_strlen(str));
+	if (str)
+		write (fd, str, ft_strlen(str));
 }
