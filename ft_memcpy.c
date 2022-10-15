@@ -6,7 +6,7 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 15:37:22 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/12 15:37:58 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/15 22:15:26 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t	i;
 
+	if (!src && !dest)
+		return (NULL);
 	i = -1;
 	while (++i < n)
 		((unsigned char *) dest)[i] = ((unsigned char *)src)[i];
