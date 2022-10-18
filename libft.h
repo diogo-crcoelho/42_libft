@@ -6,7 +6,7 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 23:57:09 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/17 14:33:18 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:07:39 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,8 @@ void	*ft_calloc(size_t nitems, size_t size);
 //--------------------------------Part 2--------------------------------------//
 
 char	*ft_itoa(int n);
+char	*ft_strjoin(char const *str1, char const *str2);
+char	*ft_strmapi(char const *str, char (*f)(unsigned int, char));
 char	*ft_strtrim(const char *str, const char *charset);
 char	*ft_substr(char const *str, unsigned int start, size_t n);
 char	**ft_split(const char *str, char c);
@@ -54,5 +56,6 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *str, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *str, int fd);
+void	ft_striteri(char *str, void (*f)(unsigned int, char*));
 
 #endif

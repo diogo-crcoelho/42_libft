@@ -6,7 +6,7 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 21:59:41 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/18 01:15:38 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/18 13:41:36 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,13 +46,14 @@ static size_t	word_size(const char *str, int n, char c)
 }
 
 /**
- * @brief  
- * @note   
- * @param  *str: 
- * @param  c: 
- * @retval 
+ *>>allocates and returns an array of strings obtained by splitting str using
+ * the character ’c’ as a delimiter. The array must end with a NULL pointer.<<
+ *   
+ * @param  *str: string to be split 
+ * @param  c: delimiter char
+ * @retval: The array of new strings resulting from the split.
+ * NULL if the allocation fails.
  */
-*/
 char	**ft_split(const char *str, char c)
 {
 	char	**ret;

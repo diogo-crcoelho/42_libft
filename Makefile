@@ -6,7 +6,7 @@
 #    By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/02 18:27:40 by soups             #+#    #+#              #
-#    Updated: 2022/10/17 15:27:49 by dcarvalh         ###   ########.fr        #
+#    Updated: 2022/10/18 15:16:11 by dcarvalh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,9 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c\
 	ft_itoa.c \
 	ft_strtrim.c \
 	ft_putnbr_fd.c ft_putchar_fd.c ft_putendl_fd.c ft_putstr_fd.c \
-	ft_substr.c ft_split.c
+	ft_substr.c ft_split.c \
+	ft_strjoin.c \
+	ft_strmapi.c  ft_striteri.c
 	
 OBJS = $(SRCS:.c=.o)
 INC = libft.h
