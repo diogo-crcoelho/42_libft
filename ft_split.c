@@ -6,7 +6,7 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 21:59:41 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/18 01:12:18 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/18 01:15:38 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,14 @@ static size_t	word_size(const char *str, int n, char c)
 	return (i);
 }
 
+/**
+ * @brief  
+ * @note   
+ * @param  *str: 
+ * @param  c: 
+ * @retval 
+ */
+*/
 char	**ft_split(const char *str, char c)
 {
 	char	**ret;
