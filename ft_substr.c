@@ -1,25 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/10 15:06:24 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/18 01:13:25 by dcarvalh         ###   ########.fr       */
+/*   Created: 2022/10/17 15:20:44 by dcarvalh          #+#    #+#             */
+/*   Updated: 2022/10/17 15:23:00 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/**
-*>>sets first n bytes of memory pointed by str to 0
-* erasing them<<
-* 
-* @param *str: pointer to the block of memory to erase
-* @param n: number of bytes to erase
-* */
-void	ft_bzero(void *str, size_t n)
+char	*ft_substr(char const *str, unsigned int start, size_t n)
 {
-	ft_memset(str, 0, n);
+	char	*ret;
+	size_t	i;
+
+	if (!str)
+		return (NULL);
+	ret = (char *)malloc(n + 1);
+	if (!ret)
+		return (NULL);
+	i = -1;
+	if (start >= ft_strlen(str))
+		ret[0] = 0;
+	else
+	{
+		while (++i < n)
+			ret[i] = str[start + i];
+		ret[i] = 0;
+	}
+	return (ret);
 }

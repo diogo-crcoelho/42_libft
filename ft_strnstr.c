@@ -6,7 +6,7 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 14:50:30 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/15 23:18:21 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/17 15:09:32 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 		while (++i <= n - size)
 		{
 			if (!ft_strncmp(&haystack[i], needle, size))
-				return ((char *)haystack + i);
+				return ((char *)&haystack[i]);
 		}
 	}
 	return (NULL);
