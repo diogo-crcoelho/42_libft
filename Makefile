@@ -6,7 +6,7 @@
 #    By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/02 18:27:40 by soups             #+#    #+#              #
-#    Updated: 2022/10/20 02:46:09 by dcarvalh         ###   ########.fr        #
+#    Updated: 2022/10/24 22:34:36 by dcarvalh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,7 +75,7 @@ so: re bonus
 	
 norm :
 	$(NORM) CheckDefine $(INC)
-	$(NORM) CheckForbiddenSourceHeader $(SRCS)
+	$(NORM) CheckForbiddenSourceHeader $(SRCS) $(B_SRCS)
 
 sanitize:
 	$(CC) $(CFLAGS) $(CPPFLAGS) $(SRCS)

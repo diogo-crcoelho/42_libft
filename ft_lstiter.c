@@ -6,7 +6,7 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 02:25:59 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/20 03:32:54 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/24 23:24:30 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!lst || !f)
 		return ;
-	while(lst)
+	while (lst)
 	{
 		f(lst->content);
 		lst = lst->next;

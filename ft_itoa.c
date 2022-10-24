@@ -6,11 +6,12 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 22:56:16 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/14 18:31:14 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/24 22:45:33 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 static size_t	digit_count(long int n)
 {
@@ -19,12 +20,12 @@ static size_t	digit_count(long int n)
 	i = 0;
 	if (n <= 0)
 	{
-		i ++;
+		++i;
 		n *= -1;
 	}
 	while (n > 0)
 	{
-		i ++;
+		++i;
 		n /= 10;
 	}
 	return (i);

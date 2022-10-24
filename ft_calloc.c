@@ -6,11 +6,12 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 00:30:53 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/13 18:51:43 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/24 22:44:24 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 /**
 *>>alocates requested memory and returns a pointer to it
@@ -23,8 +24,12 @@
 * */
 void	*ft_calloc(size_t nitems, size_t size)
 {
-	void	*ret;
+	void		*ret;
+	long long	temp;
 
+	temp = nitems * size;
+	if (nitems != temp / size)
+		return (NULL);
 	ret = malloc(nitems * size);
 	if (!ret)
 		return (NULL);

@@ -6,11 +6,12 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 21:59:41 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/18 21:44:29 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/24 22:52:32 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 static int	count_words(const char *str, char c)
 {

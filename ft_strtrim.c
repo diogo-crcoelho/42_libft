@@ -6,11 +6,12 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 16:08:41 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/14 18:32:40 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/24 23:07:17 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 static int	check_sep(char c, const char *charset)
 {
@@ -49,8 +50,6 @@ char	*ft_strtrim(const char *str, const char *charset)
 	if (!str)
 		return (NULL);
 	size = check_size(str, charset);
-	if (!size)
-		return ("");
 	res = (char *)malloc(size + 1);
 	if (!res)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 19:52:51 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/19 20:00:50 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/24 23:22:36 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@ int	ft_lstsize(t_list *lst)
 	if (!lst)
 		return (0);
 	i = 1;
-	while(lst->next)
+	while (lst->next)
 	{
 		i ++;
-		lst = lst->next;;
+		lst = lst->next;
 	}
 	return (i);
 }

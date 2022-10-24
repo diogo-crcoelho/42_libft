@@ -6,7 +6,7 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 17:57:43 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/19 22:33:47 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/24 23:20:14 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
  * @param  *new: the address of a pointer to the node to be added to the list.
  * @retval None
  */
-void ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (!new)
 		return ;

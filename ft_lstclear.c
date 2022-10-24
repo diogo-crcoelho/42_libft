@@ -6,7 +6,7 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 00:27:45 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/20 03:34:10 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/24 23:23:50 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*temp;
-	
+
 	if (!lst || !del)
 		return ;
 	while ((*lst))

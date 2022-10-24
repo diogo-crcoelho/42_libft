@@ -6,11 +6,12 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 14:58:29 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/14 18:31:30 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/24 22:51:54 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
 static size_t	digit_count(long int n)
 {

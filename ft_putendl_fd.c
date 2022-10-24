@@ -6,11 +6,12 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 18:42:12 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/13 22:54:09 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/24 22:51:26 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
 /**
 *>>outputs the string ’str’ to the given file

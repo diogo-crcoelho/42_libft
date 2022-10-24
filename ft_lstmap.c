@@ -6,7 +6,7 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 02:28:57 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/20 03:37:29 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/24 23:25:09 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,13 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*head;
 
 	head = NULL;
-	while(lst)
+	while (lst)
 	{
 		temp = ft_lstnew(f(lst->content));
-		if	(!temp)
+		if (!temp)
 			ft_lstdelone(lst, del);
 		ft_lstadd_back(&head, temp);
-		lst=lst->next;
+		lst = lst->next;
 	}
 	return (head);
 }

@@ -6,11 +6,12 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 22:37:17 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/19 23:02:34 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/24 23:23:29 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 /**
  *>>takes as a parameter a node and frees the memory of the node's

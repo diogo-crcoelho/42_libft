@@ -6,11 +6,12 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 22:40:59 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/13 22:52:24 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/24 22:51:40 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
 /**
 *>>outputs the character ’c’ to the given file

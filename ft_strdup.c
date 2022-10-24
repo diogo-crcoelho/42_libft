@@ -6,11 +6,12 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 16:19:09 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/23 23:40:31 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/24 22:53:37 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 /**
 *>>duplicate string given<
