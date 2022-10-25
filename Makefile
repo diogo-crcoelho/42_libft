@@ -6,7 +6,7 @@
 #    By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/02 18:27:40 by soups             #+#    #+#              #
-#    Updated: 2022/10/24 22:34:36 by dcarvalh         ###   ########.fr        #
+#    Updated: 2022/10/25 17:33:33 by dcarvalh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,10 +44,8 @@ B_SRCS = ft_lstnew.c \
 
 OBJS = $(SRCS:.c=.o)
 B_OBJS = $(B_SRCS:.c=.o)
-INC = libft.h
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
-CPPFLAGS = -fsanitize=address -g
 NORM = norminette -R
 
 %.o:%.c
@@ -68,15 +66,3 @@ fclean: clean
 	rm -f $(NAME)
 
 re:	fclean all
-
-so: re bonus
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS) $(B_SRCS)
-	gcc -nostartfiles -shared -o libft.so $(OBJS) $(B_OBJS)
-	
-norm :
-	$(NORM) CheckDefine $(INC)
-	$(NORM) CheckForbiddenSourceHeader $(SRCS) $(B_SRCS)
-
-sanitize:
-	$(CC) $(CFLAGS) $(CPPFLAGS) $(SRCS)
-	
