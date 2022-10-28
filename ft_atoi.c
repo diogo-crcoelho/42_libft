@@ -6,7 +6,7 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 16:28:16 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/24 22:18:36 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/28 15:15:35 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,9 @@ static int	ft_isspace(int c)
  */
 int	ft_atoi(const char *str)
 {
-	int	res;
-	int	i;
-	int	signal;
+	long	res;
+	int		i;
+	int		signal;
 
 	i = 0;
 	signal = 1;

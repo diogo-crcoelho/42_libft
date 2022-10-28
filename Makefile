@@ -6,7 +6,7 @@
 #    By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/02 18:27:40 by soups             #+#    #+#              #
-#    Updated: 2022/10/25 17:33:33 by dcarvalh         ###   ########.fr        #
+#    Updated: 2022/10/25 19:01:37 by dcarvalh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,18 +44,18 @@ B_SRCS = ft_lstnew.c \
 
 OBJS = $(SRCS:.c=.o)
 B_OBJS = $(B_SRCS:.c=.o)
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 NORM = norminette -R
 
 %.o:%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
+all : $(NAME)
+
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 		
-all : $(NAME)
-
 bonus: $(B_OBJS)
 	ar rcs $(NAME) $(B_OBJS)
 
