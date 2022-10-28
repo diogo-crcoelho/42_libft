@@ -44,7 +44,7 @@ B_SRCS = ft_lstnew.c \
 
 OBJS = $(SRCS:.c=.o)
 B_OBJS = $(B_SRCS:.c=.o)
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 NORM = norminette -R
 
