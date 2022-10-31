@@ -6,7 +6,7 @@
 /*   By: dcarvalh <dcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 00:30:53 by dcarvalh          #+#    #+#             */
-/*   Updated: 2022/10/25 23:52:21 by dcarvalh         ###   ########.fr       */
+/*   Updated: 2022/10/31 12:29:40 by dcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,7 @@
 void	*ft_calloc(size_t nitems, size_t size)
 {
 	void	*ret;
-	size_t	temp;
 
-	temp = nitems * size;
-	if (nitems != temp / size)
-		return (NULL);
 	ret = malloc(nitems * size);
 	if (!ret)
 		return (NULL);
