@@ -10,7 +10,7 @@ standard functions. This project is about understanding the way these functions 
 implementing and learning to use them. Your will create your own library. It will be
 helpful since you will use it in your next C school assignments.
 
-Link to the subject [here](https://github.com/diogo-crcoelho/42_libft/blob/master/en.subject.pdf)
+Link to the subject [here](https://cdn.intra.42.fr/pdf/pdf/65489/en.subject.pdf)
 
 ## Tests
 My project was tested using some mains created by me, and using [libft-unit-test](https://github.com/alelievr/libft-unit-test), [libft-war-machine](https://github.com/y3ll0w42/libft-war-machine) and [libftTester](https://github.com/Tripouille/libftTester).
