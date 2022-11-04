@@ -1,8 +1,12 @@
 # 42_libft
 
-<p align="center">
-  <img width="400" height="300" src="https://scontent.flis5-3.fna.fbcdn.net/v/t39.30808-6/311986694_530152999115861_629994339087354383_n.png?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=cEMAEEe55pQAX-gChdJ&_nc_ht=scontent.flis5-3.fna&oh=00_AT83rBXvHQuSNyPRhpBjDd6srWwYmKRGupyFsw4mso4-yw&oe=6355C03D"
-</p>
+<div align="center">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/114630189/199824676-5b6523b2-fe41-4990-a415-bf6b88c9c2d0.svg" height="200px">
+<source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/114630189/199824808-106f57b2-e29f-4612-98d5-7b9ad719c1b5.svg" height="200px">
+<img alt="INTRA" src="https://user-images.githubusercontent.com/114630189/199824676-5b6523b2-fe41-4990-a415-bf6b88c9c2d0.svg" height="200px">
+</picture>
+</div>  
 
 ## Description
 C programming can be very tedious when one doesn’t have access to the highly useful
